@@ -59,7 +59,7 @@ class Player(BasePlayer):
     answer_17 = models.IntegerField(blank=True)
     answer_18 = models.IntegerField(blank=True)
     payoff1 = models.CurrencyField(initial=0, min=0)
-    radio1 = models.IntegerField(choices=[[0, '0'], [1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5'], [6, '6'], [7, '7'], [8, '8'], [9, '9'], [10, '10']], widget=widgets.RadioSelectHorizontal)
+    radio1 = models.IntegerField(choices=[[0, '0'], [1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5'], [6, '6'], [7, '7'], [8, '8']], widget=widgets.RadioSelectHorizontal)
     self_choice = models.IntegerField(choices=[[1, 'Топ 10%'], [2, 'Выше среднего, но не топ 10%'], [3, 'Ниже среднего']], widget=widgets.RadioSelect)
     payoff2 = models.CurrencyField(initial=0, min=0)
     answer_2_1 = models.IntegerField(blank=True)
