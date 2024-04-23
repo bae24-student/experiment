@@ -70,11 +70,11 @@ class Player(BasePlayer):
     answer_2_6 = models.IntegerField(blank=True)
     answer_2_7 = models.IntegerField(blank=True)
     answer_2_8 = models.IntegerField(blank=True)
-    email = models.LongStringField(label='1. Укажи свою почту РЭШ в формате ...@nes.ru')
-    age = models.IntegerField(label='2. Сколько тебе лет?')
-    faculty = models.IntegerField(choices=[[1, 'BAE'], [2, 'MAE'], [3, 'MAF'], [4, 'MIF'], [5, 'EDS'], [6, 'Другой'], [7, 'Выпускник(-ца)']], label='3. На каком факультете ты учишься?', widget=widgets.RadioSelect)
-    year = models.IntegerField(choices=[[1, '1'], [2, '2'], [3, '3'], [4, '4'], [0, 'Выпускник(-ца)']], label='4. На каком курсе ты учишься?', widget=widgets.RadioSelect)
-    gender = models.IntegerField(choices=[[1, 'Мужской'], [0, 'Женский']], label='5. Укажи свой пол', widget=widgets.RadioSelect)
+    email = models.LongStringField(label='1. Укажите свою почту РЭШ в формате ...@nes.ru')
+    age = models.IntegerField(label='2. Сколько Вам лет?')
+    faculty = models.IntegerField(choices=[[1, 'BAE'], [2, 'MAE'], [3, 'MAF'], [4, 'MIF'], [5, 'EDS'], [6, 'Другой'], [7, 'Выпускник(-ца)']], label='3. На какой программе Вы учитесь?', widget=widgets.RadioSelect)
+    year = models.IntegerField(choices=[[1, '1'], [2, '2'], [3, '3'], [4, '4'], [0, 'Выпускник(-ца)']], label='4. На каком курсе Вы учитесь?', widget=widgets.RadioSelect)
+    gender = models.IntegerField(choices=[[1, 'Мужской'], [0, 'Женский']], label='5. Укажите свой пол', widget=widgets.RadioSelect)
     success = models.CurrencyField(initial=0, min=0)
 def is_displayed1(player: Player):
     participant = player.participant
