@@ -7,7 +7,16 @@ USE_POINTS = True
 DEMO_PAGE_INTRO_HTML = ''
 PARTICIPANT_FIELDS = ['expiry1', 'expiry2']
 SESSION_FIELDS = []
-ROOMS = []
+ROOMS = [
+    dict(
+        name='test',
+        display_name='Test'
+    ),
+    dict(
+        name='experiment',
+        display_name='Experiment'
+    ),
+]
 
 ADMIN_USERNAME = 'admin'
 # for security, best to set admin password in an environment variable
