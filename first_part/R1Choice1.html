@@ -1,0 +1,18 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Задача 1{{ endblock }}
+
+{{ block content }}
+
+<b><p>Твой ответ: {{ answer }}</p>
+
+    <p>Ответ ИИ: 100</p></b>
+
+{{ formfield 'choice_1' label="Выбери финальный ответ:"}}
+
+<b>Если твой ответ совпадает с ответом ИИ, нажимай на кнопку "Оставить свой ответ"!</b>
+
+
+
+{{ next_button }}
+
+{{ endblock }}
